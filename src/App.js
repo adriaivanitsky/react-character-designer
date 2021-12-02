@@ -1,14 +1,12 @@
-import logo from './logo.svg';
 import './App.css';
-import background from '../public/assets/cross-stitch-background.png';
-
+import background from './cross-stitch-background.png';
 function App() {
   return (
-    <div className="App">
-      <main style={{ backgroundImage: `url(${background})`}}>
-
-      </main>
-    </div>
+    <>
+      <div className="App" style={{ backgroundImage: `url(${background})` }}>
+      
+      </div>
+    </>
   );
 }
 

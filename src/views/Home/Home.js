@@ -5,7 +5,8 @@ import Picker from '../../components/Picker/Picker';
 export default function Home() {
   return (
     <div>
-            
+      <Character />
+      <Picker />    
     </div>
   );
 }
