@@ -1,3 +1,11 @@
 img {
     width: 100px;
 }
+
+.images {
+    border: 1px solid black;
+}
+
+.counters {
+   border: 1px solid black;
+}
