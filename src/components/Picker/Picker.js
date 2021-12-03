@@ -1,7 +1,7 @@
 import React from 'react';
 import './Picker.css';
 
-export default function Picker({ head, setHead, middle, setMiddle, pants, setPants, headCount, setHeadCount }) {
+export default function Picker({ head, setHead, middle, setMiddle, pants, setPants, setHeadCount }) {
   const handleHeadChange = (e) => {
     setHead(e.target.value);
     setHeadCount((prevState) => (prevState + 1));
@@ -15,12 +15,18 @@ export default function Picker({ head, setHead, middle, setMiddle, pants, setPan
         <option value="horse-head">horse</option>
       </select>  
       <select value={middle} onChange={(e) => setMiddle(e.target.value)}>
-        <option value="blue-middle"></option>
-        <option value="pink-middle"></option>
-        <option value="red-middle"></option>
-        <option value="dress-middle"></option>
-        {/* finish all options and add event listeners to each */}
+        <option value="blue-middle">blue</option>
+        <option value="pink-middle">pink</option>
+        <option value="red-middle">red</option>
+        <option value="dress-middle">dress</option>
       </select>   
+      <select value={pants} onChange={(e) => setPants(e.target.value)}>
+        <option value="white-pants">white</option>
+        <option value="leg-pants">leg</option>
+        <option value="dog-pants">dog</option>
+        <option value="blue-pants">blue</option>
+
+      </select>
     </div>
   );
 }
