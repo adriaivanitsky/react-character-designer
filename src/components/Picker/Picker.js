@@ -1,5 +1,5 @@
 import React from 'react';
-import '../Character.css';
+import './Picker.css';
 
 export default function Picker() {
   return (
