@@ -8,4 +8,11 @@ img {
 
 .counters {
    border: 1px solid black;
+
+   
+}
+
+.phrases {
+ display: flex;
+ flex-direction: column;
 }

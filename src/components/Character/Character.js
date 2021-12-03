@@ -1,7 +1,7 @@
 import React from 'react';
 import './Character.css';
 
-export default function Character({ head, middle, pants, headCount }) {
+export default function Character({ head, middle, pants, headCount, phraseList }) {
   return (
     <div>
       <div className="images">
@@ -12,6 +12,12 @@ export default function Character({ head, middle, pants, headCount }) {
 
       <div className="counters">
         <span>You&apos;ve changed your head {headCount} times</span>
+      </div>
+
+      <div className="phrases">
+        {phraseList.map((phrase) => (
+          <span key={phrase}>{phrase}</span>
+        ))}
       </div>
 
     </div>
