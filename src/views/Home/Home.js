@@ -12,10 +12,10 @@ export default function Home() {
   const [input, setInput] = useState('');
   return (
     <main>
-      <Character head={head} middle={middle} pants={pants} headCount={headCount} phraseList={phraseList} />
-      <Picker head={head} setHead={setHead} middle={middle} setMiddle={setMiddle} 
-        pants={pants} setPants={setPants} headCount={headCount} setHeadCount={setHeadCount}
-        phraseList={phraseList} setPhraseList={setPhraseList} input={input} setInput={setInput} />    
+      <Character {...{ head, middle, pants, headCount, phraseList }} />
+      <Picker {...{ head, setHead, middle, setMiddle, pants, setPants, headCount, setHeadCount, phraseList, 
+        setPhraseList, 
+        input, setInput }} />    
     </main>
   );
 }
