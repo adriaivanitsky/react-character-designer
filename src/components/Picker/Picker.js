@@ -1,11 +1,21 @@
 import React from 'react';
 import './Picker.css';
 
-export default function Picker({ head, setHead, middle, setMiddle, pants, 
-  setPants, setHeadCount, setPhraseList, input, setInput }) {
+export default function Picker({
+  head,
+  setHead,
+  middle,
+  setMiddle,
+  pants,
+  setPants,
+  setHeadCount,
+  setPhraseList,
+  input,
+  setInput,
+}) {
   const handleHeadChange = (e) => {
     setHead(e.target.value);
-    setHeadCount((prevState) => (prevState + 1));
+    setHeadCount((prevState) => prevState + 1);
   };
 
   const handleButton = () => {
@@ -19,13 +29,13 @@ export default function Picker({ head, setHead, middle, setMiddle, pants,
         <option value="dog-head">dog</option>
         <option value="duck-head">duck</option>
         <option value="horse-head">horse</option>
-      </select>  
+      </select>
       <select value={middle} onChange={(e) => setMiddle(e.target.value)}>
         <option value="blue-middle">blue</option>
         <option value="pink-middle">pink</option>
         <option value="red-middle">red</option>
         <option value="dress-middle">dress</option>
-      </select>   
+      </select>
       <select value={pants} onChange={(e) => setPants(e.target.value)}>
         <option value="white-pants">white</option>
         <option value="leg-pants">leg</option>
@@ -33,9 +43,15 @@ export default function Picker({ head, setHead, middle, setMiddle, pants,
         <option value="blue-pants">blue</option>
       </select>
 
-      <input value={input} type="text" placeholder="Make your own catchphrase" 
-        onChange={(e) => setInput(e.target.value)} />
-      <button id="button" onClick={handleButton}>enter</button>
+      <input
+        value={input}
+        type="text"
+        placeholder="Make your own catchphrase"
+        onChange={(e) => setInput(e.target.value)}
+      />
+      <button id="button" onClick={handleButton}>
+        enter
+      </button>
     </div>
   );
 }

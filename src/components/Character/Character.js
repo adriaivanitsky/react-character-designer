@@ -19,7 +19,6 @@ export default function Character({ head, middle, pants, headCount, phraseList }
           <span key={phrase}>{phrase}</span>
         ))}
       </div>
-
     </div>
   );
 }

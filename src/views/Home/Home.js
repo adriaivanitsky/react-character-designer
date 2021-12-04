@@ -13,9 +13,22 @@ export default function Home() {
   return (
     <main>
       <Character {...{ head, middle, pants, headCount, phraseList }} />
-      <Picker {...{ head, setHead, middle, setMiddle, pants, setPants, headCount, setHeadCount, phraseList, 
-        setPhraseList, 
-        input, setInput }} />    
+      <Picker
+        {...{
+          head,
+          setHead,
+          middle,
+          setMiddle,
+          pants,
+          setPants,
+          headCount,
+          setHeadCount,
+          phraseList,
+          setPhraseList,
+          input,
+          setInput,
+        }}
+      />
     </main>
   );
 }
